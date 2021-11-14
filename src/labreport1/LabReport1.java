@@ -22,23 +22,23 @@ public class LabReport1 {
         Random r = new Random();
         
         // Question 1
-//        System.out.println("Enter length of each side of triangle. ");
-//        System.out.print("side 1: ");
-//        double s1 = s.nextDouble();
-//        System.out.print("side 2: ");
-//        double s2 = s.nextDouble();
-//        System.out.print("side 3: ");
-//        double s3 = s.nextDouble();
-//        
-//        if (s1 + s2 <= s3 || s1 + s3 <= s2 || s2 + s3 <= s1){
-//            System.out.println("Invalid triangle");
-//        }else if ( s1 == s2 && s1 == s3){
-//            System.out.println("Equilateral triangle");
-//        }else if ( s1 == s2 || s1 == s3 || s2 == s3){
-//            System.out.println("Isoscles triangle");
-//        }else{
-//            System.out.println("Scalene triangle");
-//        }
+        System.out.println("Enter length of each side of triangle. ");
+        System.out.print("side 1: ");
+        double s1 = s.nextDouble();
+        System.out.print("side 2: ");
+        double s2 = s.nextDouble();
+        System.out.print("side 3: ");
+        double s3 = s.nextDouble();
+        
+        if (s1 + s2 <= s3 || s1 + s3 <= s2 || s2 + s3 <= s1){
+            System.out.println("Invalid triangle");
+        }else if ( s1 == s2 && s1 == s3){
+            System.out.println("Equilateral triangle");
+        }else if ( s1 == s2 || s1 == s3 || s2 == s3){
+            System.out.println("Isoscles triangle");
+        }else{
+            System.out.println("Scalene triangle");
+        }
         
         
         // Question 2
