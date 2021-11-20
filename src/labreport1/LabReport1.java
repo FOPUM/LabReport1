@@ -137,7 +137,6 @@ public class LabReport1 {
                     }
                 xnum++;
                 i++;
-                System.out.println("i: " +i);
                 }
             }
             if(eqray[i] == '+' || eqray[i] == '-'){
@@ -155,8 +154,6 @@ public class LabReport1 {
                     }
                     xnum++;
                     i++;
-                    System.out.println("j: " +j);
-                    System.out.println("i: " +i);
                 }
             }
                 if(xnum==3){
@@ -164,7 +161,6 @@ public class LabReport1 {
                     while(j<max){
                         cstring = cstring + eqray[j];
                         j++;
-                        System.out.println("j: " +j);
                     }
                     
                 }
