@@ -125,13 +125,22 @@ public class LabReport1 {
          String cstring = "";
         
             for(int i = 0; i < eq.length(); i++){
-            if(eqray[i] == '+' || eqray[i] == '-'){
+            if(eqray[i] == '+' || (eqray[i] == '-'&&i !=0) ){
                 if(xnum == 1){
                     while(j < i){
+                        System.out.println(j);
                         if(((j-1) == -1) && eqray[j] == 'x'){
                         astring += 1;
                         }
-                    astring = astring + eqray[j];
+                        else if(eqray[j] == '-' && eqray[j+1] == 'x'){
+                            astring += "-1";
+                            
+                        }
+                        else{
+                            astring = astring + eqray[j];
+                        }
+                    
+                    
                     j++;   
                     
                     }
@@ -145,6 +154,10 @@ public class LabReport1 {
                     while(j<i){
                         if(eqray[j] == 'x' && eqray[j-1] == '+'){
                         bstring += 1;
+                        j++;
+                        }
+                        else if(eqray[j+1] == 'x' && eqray[j] == '-'){
+                        bstring += "-1";
                         j++;
                         }
                         else{
