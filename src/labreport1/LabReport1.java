@@ -22,86 +22,86 @@ public class LabReport1 {
         Random r = new Random();
         
         // Question 1
-//        System.out.println("Enter length of each side of triangle. ");
-//        System.out.print("side 1: ");
-//        double s1 = s.nextDouble();
-//        System.out.print("side 2: ");
-//        double s2 = s.nextDouble();
-//        System.out.print("side 3: ");
-//        double s3 = s.nextDouble();
-//        
-//        if (s1 + s2 <= s3 || s1 + s3 <= s2 || s2 + s3 <= s1){
-//            System.out.println("Invalid triangle");
-//        }else if ( s1 == s2 && s1 == s3){
-//            System.out.println("Equilateral triangle");
-//        }else if ( s1 == s2 || s1 == s3 || s2 == s3){
-//            System.out.println("Isoscles triangle");
-//        }else{
-//            System.out.println("Scalene triangle");
-//        }
+        System.out.println("Enter length of each side of triangle. ");
+        System.out.print("side 1: ");
+        double s1 = s.nextDouble();
+        System.out.print("side 2: ");
+        double s2 = s.nextDouble();
+        System.out.print("side 3: ");
+        double s3 = s.nextDouble();
+        
+        if (s1 + s2 <= s3 || s1 + s3 <= s2 || s2 + s3 <= s1){
+            System.out.println("Invalid triangle");
+        }else if ( s1 == s2 && s1 == s3){
+            System.out.println("Equilateral triangle");
+        }else if ( s1 == s2 || s1 == s3 || s2 == s3){
+            System.out.println("Isoscles triangle");
+        }else{
+            System.out.println("Scalene triangle");
+        }
         
         
         // Question 2
         
-//        int c1 = r.nextInt(4) + 1;
-//        int n1 = r.nextInt(10) + 1;
-//        int c2 = r.nextInt(4) + 1;
-//        int n2 = r.nextInt(10) + 1;
-//        String color1 = "";
-//        String color2 = "";
-//        
-//        switch(c1){
-//            case 1:
-//                color1 = "Yellow";
-//                break;
-//            case 2:
-//                color1 = "Green";
-//                break;
-//            case 3:
-//                color1 = "Blue";
-//                break;
-//            case 4:
-//                color1 = "Red";
-//                break;
-//        }
-//        
-//        switch(c2){
-//            case 1:
-//                color2 = "Yellow";
-//                break;
-//            case 2:
-//                color2 = "Green";
-//                break;
-//            case 3:
-//                color2 = "Blue";
-//                break;
-//            case 4:
-//                color2 = "Red";
-//                break;
-//        }
-//        
-//        System.out.println("Card 1 : " + color1 + " " + String.valueOf(n1));
-//        System.out.println("Card 2 : " + color2 + " " + String.valueOf(n2));
-//        
-//        if(n1 == 1 && n2 != 1 ){
-//            System.out.println("Card 1 is bigger");
-//        }
-//        else if (n2 == 1 && n1 != 1 ){
-//            System.out.println("Card 2 is bigger");
-//        }
-//        else if (n2 > n1 && n1 != 1){
-//            System.out.println("Card 2 is bigger");
-//        } else if (n1 > n2 && n2 != 1){
-//            System.out.println("Card 1 is bigger");
-//        } else if (n1 == n2){
-//            if (c2 > c1){
-//                System.out.println("Card 2 is bigger");
-//            }else if(c1> c2){
-//                System.out.println("Card 1 is bigger");
-//            }else{
-//            System.out.println("They are the same");
-//            }
-//        }
+        int c1 = r.nextInt(4) + 1;
+        int n1 = r.nextInt(10) + 1;
+        int c2 = r.nextInt(4) + 1;
+        int n2 = r.nextInt(10) + 1;
+        String color1 = "";
+        String color2 = "";
+        
+        switch(c1){
+            case 1:
+                color1 = "Yellow";
+                break;
+            case 2:
+                color1 = "Green";
+                break;
+            case 3:
+                color1 = "Blue";
+                break;
+            case 4:
+                color1 = "Red";
+                break;
+        }
+        
+        switch(c2){
+            case 1:
+                color2 = "Yellow";
+                break;
+            case 2:
+                color2 = "Green";
+                break;
+            case 3:
+                color2 = "Blue";
+                break;
+            case 4:
+                color2 = "Red";
+                break;
+        }
+        
+        System.out.println("Card 1 : " + color1 + " " + String.valueOf(n1));
+        System.out.println("Card 2 : " + color2 + " " + String.valueOf(n2));
+        
+        if(n1 == 1 && n2 != 1 ){
+            System.out.println("Card 1 is bigger");
+        }
+        else if (n2 == 1 && n1 != 1 ){
+            System.out.println("Card 2 is bigger");
+        }
+        else if (n2 > n1 && n1 != 1){
+            System.out.println("Card 2 is bigger");
+        } else if (n1 > n2 && n2 != 1){
+            System.out.println("Card 1 is bigger");
+        } else if (n1 == n2){
+            if (c2 > c1){
+                System.out.println("Card 2 is bigger");
+            }else if(c1> c2){
+                System.out.println("Card 1 is bigger");
+            }else{
+            System.out.println("They are the same");
+            }
+        }
         
         
         // Question 3
