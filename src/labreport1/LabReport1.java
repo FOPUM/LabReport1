@@ -86,15 +86,15 @@ public class LabReport1 {
         System.out.println("Card 1 : " + color1 + " " + String.valueOf(n1));
         System.out.println("Card 2 : " + color2 + " " + String.valueOf(n2));
         
-        if(n1 == 1 && n2 != 1 ){
+        if(n1 == 1 && n2 == 10 ){
             System.out.println("Card 1 is bigger");
         }
-        else if (n2 == 1 && n1 != 1 ){
+        else if (n2 == 1 && n1 == 10 ){
             System.out.println("Card 2 is bigger");
         }
-        else if (n2 > n1 && n1 != 1){
+        else if (n2 > n1){
             System.out.println("Card 2 is bigger");
-        } else if (n1 > n2 && n2 != 1){
+        } else if (n1 > n2){
             System.out.println("Card 1 is bigger");
         } else if (n1 == n2){
             if (c2 > c1){
