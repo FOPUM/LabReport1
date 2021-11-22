@@ -25,10 +25,13 @@ public class LabReport1 {
         System.out.println("Enter length of each side of triangle. ");
         System.out.print("side 1: ");
         double s1 = s.nextDouble();
+        s.nextLine();
         System.out.print("side 2: ");
         double s2 = s.nextDouble();
+        s.nextLine();
         System.out.print("side 3: ");
         double s3 = s.nextDouble();
+        s.nextLine();
         
         if (s1 + s2 <= s3 || s1 + s3 <= s2 || s2 + s3 <= s1){
             System.out.println("Invalid triangle");
@@ -105,9 +108,16 @@ public class LabReport1 {
         
         
         // Question 3
+        int a =0;
+        int b =0;
+        int c =0;
+        
+        boolean checka = false;
+        boolean checkb = false;
+        boolean checkc = false;
+        do{
         System.out.print("Enter Quadratic equation: ");
         String eq = s.nextLine();
-//        String eq = "-x2 + x + 1";
         while(!eq.contains("x") || !eq.contains("x2")){
         System.out.println("This is not a valid quadratic equation please enter again!");
         System.out.print("Enter Quadratic equation: ");
@@ -115,7 +125,6 @@ public class LabReport1 {
         }
         // Remove whitespace
         eq = eq.replaceAll(" ","");
-//        System.out.println(eq);
         char eqray[] = eq.toCharArray();
         int j =0;
         int xnum = 1;
@@ -128,22 +137,25 @@ public class LabReport1 {
             if(eqray[i] == '+' || (eqray[i] == '-'&&i !=0) ){
                 if(xnum == 1){
                     while(j < i){
-                        System.out.println(j);
                         if(((j-1) == -1) && eqray[j] == 'x'){
                         astring += 1;
+                        j++;
+
                         }
                         else if(eqray[j] == '-' && eqray[j+1] == 'x'){
                             astring += "-1";
-                            
+
                         }
                         else{
                             astring = astring + eqray[j];
+
                         }
                     
                     
                     j++;   
                     
                     }
+                    
                 xnum++;
                 i++;
                 }
@@ -187,13 +199,19 @@ public class LabReport1 {
         System.out.println("bstring: " +bstring);
         System.out.println("cstring: " +cstring);
         
-        int a = Integer.parseInt(astring);
-        int b = Integer.parseInt(bstring);
-        int c = Integer.parseInt(cstring);
+        a = Integer.parseInt(astring);
+        b = Integer.parseInt(bstring);
+        c = Integer.parseInt(cstring);
         
-        System.out.println("a: " +a);
-        System.out.println("b: " +b);
-        System.out.println("c: " +c);
+        checka = (a > 9 || a<-9 || a ==0);
+        checkb = (b > 9 || b<-9 || a ==0);
+        checkc = (c > 9 || c<-9 || c ==0);
+        if(checka || checkb || checkc){
+            System.out.println("For a,b,c , please only input the value between 1 to 9 or -9 to -1");
+        }
+        }while(checka || checkb || checkc);
+        
+        
         
         double x1 = 0;
         double x2 = 0;
@@ -215,5 +233,7 @@ public class LabReport1 {
     
         
  
-    }   
+    }
+    
+    
 }
