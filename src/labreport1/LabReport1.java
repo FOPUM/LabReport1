@@ -134,17 +134,20 @@ public class LabReport1 {
          String cstring = "";
         
             for(int i = 0; i < eq.length(); i++){
-            if(eqray[i] == '+' || (eqray[i] == '-'&&i !=0) ){
+            if(eqray[i] == '+' && i !=0 || (eqray[i] == '-'&&i !=0) ){
                 if(xnum == 1){
                     while(j < i){
-                        if(((j-1) == -1) && eqray[j] == 'x'){
+                        
+                        if(eqray[j] == '+' && eqray[j+1] == 'x'){
+                            astring += 1;
+                        }
+                        else if(( j == 0) && eqray[j] == 'x' ){
                         astring += 1;
                         j++;
 
                         }
                         else if(eqray[j] == '-' && eqray[j+1] == 'x'){
                             astring += "-1";
-
                         }
                         else{
                             astring = astring + eqray[j];
@@ -194,14 +197,14 @@ public class LabReport1 {
         astring = astring.replace("x2", "");
         bstring = bstring.replace("x","");
         
-        
-        System.out.println("astring: " +astring);
-        System.out.println("bstring: " +bstring);
-        System.out.println("cstring: " +cstring);
-        
+                
         a = Integer.parseInt(astring);
         b = Integer.parseInt(bstring);
         c = Integer.parseInt(cstring);
+        
+        System.out.println("int a : " +a);
+        System.out.println("int b : " +b);
+        System.out.println("int c : " +c);
         
         checka = (a > 9 || a<-9 || a ==0);
         checkb = (b > 9 || b<-9 || a ==0);
